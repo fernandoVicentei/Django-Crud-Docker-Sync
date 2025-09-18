@@ -17,9 +17,13 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1', 
-    '.run.app'
+    '.run.app',
+    'https://django-crud-docker-sync-189807087381.southamerica-west1.run.app'
 ]
 
+# Cookies seguras
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 # Application definition
 
