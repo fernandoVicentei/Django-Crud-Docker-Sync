@@ -18,12 +18,22 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1', 
     '.run.app',
-    'https://django-crud-docker-sync-189807087381.southamerica-west1.run.app'
+    'django-crud-docker-sync-189807087381.southamerica-west1.run.app',
+    '.run.app'
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    'django-crud-docker-sync-189807087381.southamerica-west1.run.app',
+    '.run.app',
+]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Cookies seguras
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
+
 
 # Application definition
 
